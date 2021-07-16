@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
@@ -13,60 +14,84 @@
         <img src="./assets/photos/upsida-logo-name.png" alt="logo">
     </div>
 
-        <ul id="nav-bar">
-            <li class="nav-item"><a href="#home">Home</a></li>
-            <li class="nav-item"><a href="#news">About UPSIDA</a></li>
-            <li class="nav-item"><a href="#contact">Policies</a></li>
-            <li class="nav-item"><a href="#about">Industrial Info</a></li>
-            <li class="nav-item"><a href="#GIS">GIS</a></li>
-            <li class="nav-item"><a href="E-service">E-Services</a></li>
-            <li class="nav-item"><a href="#">Office Orders</a></li>
-            <li class="nav-item submenu">↓ Resource Centre
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <button id="navbar-btn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">about upsida</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">policies</a>
+              </li>
 
-                <ul id="sub-menu">
-                    <li><a href="Default.aspx">Industrial Area operating process</a></li>
-                    <li><a href="officeorder.aspx">Office Orders</a></li>
-                    <li><a href="operating_manual_upsidc.aspx">Operating Manual 2011</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">industrial info</a>
+              </li>
 
+              <li class="nav-item">
+                <a class="nav-link" href="#">gis</a>
+              </li>
 
-                    <li><a href="building_23616.aspx">Document for approval of building plan</a></li>
-                    <li><a href="rate_list_245415.aspx">Present Rates</a></li>
-                    <li><a href="DevelopmentProcess.aspx">Development Process</a></li>
-                    <li><a href="conditions_tender.aspx">Conditions for tender</a></li>
-                    <li><a href="allotment_form.aspx">Allotment application form</a></li>
-                    <li><a href="servicelink_03032015.aspx">Services Rules</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">e-services</a>
+              </li>
 
-                    <li><a href="OfcUser_pdf/UPSIDA Land &amp; Building Regulations 2018 updated.pdf" target="_blank">By Laws of UPSIDA</a></li>
-                    <li><a href="OfcUser_pdf/OfficeUser2.pdf" target="_blank">Ammendment In UPSIDA Land Development &amp; Building Regulation  2018 </a>
-                    </li>
-                    <li><a href="OfcUser_pdf/SECOND AMMENDMENT IN UPSIDA LAND DEVELOPMENT AND BUILDING REGULATION 2018.pdf" target="_blank">Second Ammendment In UPSIDA Land Development</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">office orders</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">resource centre</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li class="dropdown-item"><a href="Default.aspx">Industrial Area operating process</a></li>
+                    <li class="dropdown-item"><a href="officeorder.aspx">Office Orders</a></li>
+
+                    <li class="dropdown-item"><a href="operating_manual_upsidc.aspx">Operating Manual 2011</a></li>
+
+                    <li class="dropdown-item"><a href="building_23616.aspx">Document for approval of building plan</a></li>
+                    <li class="dropdown-item"><a href="rate_list_245415.aspx">Present Rates</a></li>
+                    <li class="dropdown-item"><a href="DevelopmentProcess.aspx">Development Process</a></li>
+                    <li class="dropdown-item"><a href="conditions_tender.aspx">Conditions for tender</a></li>
+                    <li class="dropdown-item"><a href="allotment_form.aspx">Allotment application form</a></li>
+                    <li class="dropdown-item"><a href="servicelink_03032015.aspx">Services Rules</a></li>
+
+                    <li class="dropdown-item"><a href="OfcUser_pdf/UPSIDA Land &amp; Building Regulations 2018 updated.pdf" target="_blank">By Laws of UPSIDA</a></li>
+                    <li class="dropdown-item"><a href="OfcUser_pdf/OfficeUser2.pdf" target="_blank">Ammendment In UPSIDA Land Development &amp; Building Regulation  2018 </a></li>
+
+                    <li class="dropdown-item"><a href="OfcUser_pdf/SECOND AMMENDMENT IN UPSIDA LAND DEVELOPMENT AND BUILDING REGULATION 2018.pdf" target="_blank">Second Ammendment In UPSIDA Land Development</a></li>
                 </ul>
+              </li>
 
-            </li>
-
-            <li class="nav-item submenu">↓ Available Plot
-                <ul id="sub-menu">
-                    <li><a href="https://eservices.onlineupsidc.com/Advertisement.aspx"
-                        target="_blank">Available Plot List in Nivesh Mitra </a></li>
-                <li><a href="https://upsida.mjunction.in/" target="_blank">Available Plot in E-auction </a>
-                </li>
-
+              <li class="nav-item dropdown">
+                <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">available plots</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li class="dropdown-item"><a href="https://eservices.onlineupsidc.com/Advertisement.aspx" target="_blank">Available Plot List in Nivesh Mitra </a></li>
+                    <li class="dropdown-item"><a href="https://upsida.mjunction.in/" target="_blank">Available Plot in E-auction </a></li>
+                    
                 </ul>
-            </li>
+              </li>
 
-            <li class="nav-item submenu">↓ contact
-
-                <ul id="sub-menu">
-                    <li><a href="HeadOffice.aspx">Head Office</a></li>
-                    <li><a href="Regionaloffice.aspx">Regional/project Office</a></li>
-                    <li><a href="Divisionsoffice.aspx">Divisonal Office</a></li>
+              <li class="nav-item dropdown">
+                <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">contact us</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li class="dropdown-item"><a href="HeadOffice.aspx">Head Office</a></li>
+                    <li class="dropdown-item"><a href="Regionaloffice.aspx">Regional/project Office</a></li>
+                    <li class="dropdown-item"><a href="Divisionsoffice.aspx">Divisonal Office</a></li>
                 </ul>
-
-            </li>      
-              
-        </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
 </body>
 </html>
