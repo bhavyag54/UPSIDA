@@ -1,0 +1,22 @@
+#carouselExampleFade{
+    width: 80%;
+    margin: 30px auto;
+    z-index: 0;
+    border-radius: 20px;
+    overflow: hidden;
+
+
+  }
+  .carousel-inner img {
+    
+    height: 400px;
+    filter: brightness(90%) contrast(80%) ;
+  }
+  
+  
+  
+  .carousel-control-next,
+  .carousel-control-prev /*, .carousel-indicators */ {
+      filter: brightness(100%);
+  }
+  

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
-@import './yogi.css';
+@import url('./yogi.css');
+@import url('./carousel.css');
 
 *{
     box-sizing: border-box;
@@ -9,9 +10,13 @@
 }
 
 #navbar{
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
     .container-fluid{
-        display: flex;
         vertical-align: middle;
+        background-color: white;
     }
 
     .dropdown-item{
@@ -31,8 +36,6 @@
 
     background-color: white;
     height: 80px;
-    display: flex;
-    vertical-align: middle;
     padding: 0px;
     
     .navbar-brand{
@@ -44,14 +47,16 @@
     .dropdown{
         .dropdown-menu{
             overflow-x: hidden;
+            padding: 0px 10px;
             
             .dropdown-item{
-                display: block;
                 word-wrap: break-word;
                 border-bottom: 1px solid black;
             }
             
-            border: none;
+            :last-child{
+                border-bottom: none;
+            }
             
         }
 
@@ -59,7 +64,6 @@
     }
 
     #navbar-btn{
-        position: fixed;
         top: 0;
         right: 0;
         margin: 20px;
@@ -73,9 +77,8 @@
     .navbar-nav{
 
         .nav-item{
-            position: relative;
+
             text-align: center;
-            display: block;
 
             .nav-link{
                 color: #252638;
