@@ -1,27 +1,22 @@
-const navLinks = document.getElementsByClassName('nav-link');
+const dropdowns = document.getElementsByClassName('dropdown');
+const y = document.body.offsetWidth;
+console.log(y);
 
-console.log(navLinks)
-
-const changeActive = (event) => { 
-
-    for(let i = 0;i<navLinks.length;i++)
-    {
-        if(navLinks[i].classList[1] === 'active')
-        {
-            navLinks[i].classList.remove('active');
-        }
-    }
-
-    if(event.target.classList.length === 1)
-        event.target.classList.add('active');
-
-}
-
-for(let i = 0;i<navLinks.length;i++)
+for(let i =0; i < dropdowns.length;i++)
 {
-    navLinks[i].addEventListener('click', changeActive);
+    dropdowns[i].addEventListener('click', () => {
+
+        for(let j =0; j < dropdowns.length;j++)
+        {
+            if(dropdowns[j].childNodes[3].classList[1] === 'show' && j !== i)
+            {
+                console.log("run");
+                dropdowns[j].childNodes[3].click();
+            }
+        }
+
+        dropdowns[i].childNodes[3].style.left = `-${(document.documentElement.scrollWidth - window.innerWidth)*2}px`;
+    })
 }
-
-
 
 
