@@ -9,20 +9,18 @@
 }
 
 #navbar {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
   background-color: white;
   height: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  vertical-align: middle;
   padding: 0px;
 }
 
 #navbar .container-fluid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   vertical-align: middle;
+  background-color: white;
 }
 
 #navbar .dropdown-item a {
@@ -45,17 +43,19 @@
 
 #navbar .dropdown .dropdown-menu {
   overflow-x: hidden;
-  border: none;
+  padding: 0px 10px;
 }
 
 #navbar .dropdown .dropdown-menu .dropdown-item {
-  display: block;
   word-wrap: break-word;
   border-bottom: 1px solid black;
 }
 
+#navbar .dropdown .dropdown-menu :last-child {
+  border-bottom: none;
+}
+
 #navbar #navbar-btn {
-  position: fixed;
   top: 0;
   right: 0;
   margin: 20px;
@@ -69,9 +69,7 @@
 }
 
 #navbar .navbar-nav .nav-item {
-  position: relative;
   text-align: center;
-  display: block;
 }
 
 #navbar .navbar-nav .nav-item .nav-link {
