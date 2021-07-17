@@ -1,0 +1,140 @@
+
+  
+.news .panel {
+    border: 3px;
+  }
+  
+  .news {
+    position: relative;
+    border-top: 20px solid #0B567E;
+    margin-top: 20px;
+  }
+  
+    .news .panel-warning > .panel-heading {
+        background-color: #E4E4E4;
+        color: #000;
+        font-size: 18px;
+        height: auto;
+        overflow: hidden;
+        font-family: ralewayregular;
+    }
+  
+  .play-pause {
+    float: right;
+    font-size: 12px;
+  }
+  
+  .news-panel {
+    height: 320px;
+    list-style: outside none none;
+    margin: 0;
+    overflow: hidden !important;
+    padding: 0;
+  }
+  
+  .arw {
+    color: #bc3c3d;
+    padding-right: 10px;
+  }
+  
+  .dtype {
+    color: #02121b;
+    padding-left: 10px;
+  }
+  
+  .ndate {
+    color: #8a6d3b;
+    padding-bottom: 5px;
+  }
+  
+  .news-item {
+    border-bottom: 1px solid #e4e4e4;
+    margin: 0;
+    padding: 0 10px;
+  }
+  
+  .panel-body {
+    padding: 10px 5px;
+  }
+  
+  .news-item p {
+    margin: 4px 0;
+  }
+  
+  .news-panel .arw {
+    color: #0c085f;
+    display: none;
+    padding-right: 10px;
+  }
+  
+  .news-panel .adtext {
+    color: #000;
+    display: inline-block;
+    padding-top: 10px;
+    font-size: 13px;
+  }
+  
+  .news-panel .ndate {
+    color: #5f5f5f;
+    display: block;
+    font-size: 12px;
+  }
+  
+    .news-panel .ndate::before {
+        color: #950000;
+        content: "";
+        font-family: "FontAwesome";
+        padding-right: 2px;
+    }
+  
+  .news-panel .dtype {
+    color: #1e69a2;
+    display: block;
+    padding-left: 0;
+  }
+  
+  .news-panel .fa-file-pdf-o {
+    display: none;
+  }
+  
+  .news-panel .dsize {
+    color: #1e69a2;
+    display: block;
+  }
+  
+    .news-panel .dsize::before {
+        color: #1e69a2;
+        content: "";
+        font-family: "FontAwesome";
+        padding-right: 2px;
+    }
+  
+    .newsticker { 
+      background-color:#ccc;
+      width:300px;
+      height:250px;
+      overflow:hidden;
+      padding:10px;
+      font-family:Helvetica;
+    }
+    .newsticker .mask {
+      position: relative;
+      left: 0px;
+      top: 10px;
+      width:300px;
+      height:240px;
+      overflow: hidden;
+    }
+    .newsticker ul {
+      list-style:none;
+      margin:0;
+      padding:0;
+      position: relative;
+    }
+    .newsticker ul li {
+      padding:10px 0px;
+    }
+    .newsticker ul li a {
+      color:darkred;
+      text-decoration:none;
+    }
