@@ -1,7 +1,6 @@
-
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 @import url("./yogi.css");
-
+@import url("./carousel.css");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -14,12 +13,10 @@
   top: 0;
   left: 0;
   right: 0;
-
   z-index: 1;
   background-color: white;
   height: 80px;
   padding: 0px;
-
 }
 
 #navbar .container-fluid {
@@ -76,26 +73,6 @@
   text-align: center;
 }
 
-#carouselExampleFade{
-  width: 80%;
-  margin: 0px auto;
-}
-.carousel-inner img {
-  
-  height: 400px;
-  filter: brightness(90%) contrast(80%) ;
-
-}
-
-
-
-.carousel-control-next,
-.carousel-control-prev /*, .carousel-indicators */ {
-    filter: brightness(100%);
-}
-
-=======
-
 #navbar .navbar-nav .nav-item .nav-link {
   color: #252638;
   font-weight: 700;
@@ -107,4 +84,4 @@
 #navbar .navbar-nav .nav-item:hover .nav-link {
   color: #e31e2f;
 }
-
+/*# sourceMappingURL=style.css.map */
