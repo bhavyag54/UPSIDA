@@ -1,59 +1,80 @@
-@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
-
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+@import url("./yogi.css");
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: none;
   margin: none;
-  font-family: ASAP;
+  font-family: 'DM sans';
 }
 
-#header {
+#navbar {
   top: 0;
   left: 0;
   right: 0;
-  position: relative;
-  display: flex;
-  width: 100%;
+
+  z-index: 1;
+  background-color: white;
   height: 80px;
+  padding: 0px;
+
 }
-#header img {
-  width: auto;
+
+#navbar .container-fluid {
+  vertical-align: middle;
+  background-color: white;
 }
 
 #navbar .dropdown-item a {
   text-decoration: none;
   color: black;
+  font-weight: 700;
 }
+
+#navbar .dropdown-item:hover {
+  background-color: white;
+}
+
+#navbar .dropdown-item:hover a {
+  color: #e31e2f;
+}
+
+#navbar .navbar-brand img {
+  width: 150px;
+}
+
+#navbar .dropdown .dropdown-menu {
+  overflow-x: hidden;
+  padding: 0px 10px;
+}
+
+#navbar .dropdown .dropdown-menu .dropdown-item {
+  word-wrap: break-word;
+  border-bottom: 1px solid black;
+}
+
+#navbar .dropdown .dropdown-menu :last-child {
+  border-bottom: none;
+}
+
 #navbar #navbar-btn {
-  position: fixed;
   top: 0;
   right: 0;
   margin: 20px;
   background-color: white;
+  -webkit-transition: all 0.25s ease-in;
   transition: all 0.25s ease-in;
 }
+
 #navbar #navbar-btn:hover {
   background-color: #e6e6e6;
 }
+
 #navbar .navbar-nav .nav-item {
-  position: relative;
   text-align: center;
 }
-#navbar .navbar-nav .nav-item .active:after {
-  content: "";
-  height: 2px;
-  background: #868686;
-  position: absolute;
-  left: 10%;
-  right: 10%;
-  bottom: 5px;
-  opacity: 1;
-  transform-origin: left center;
-  transition: all 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
-  transform: scaleX(1);
-}/*# sourceMappingURL=style.css.map */
 
 #carouselExampleFade{
   width: 80%;
@@ -71,5 +92,19 @@
 .carousel-control-next,
 .carousel-control-prev /*, .carousel-indicators */ {
     filter: brightness(100%);
+}
+
+=======
+
+#navbar .navbar-nav .nav-item .nav-link {
+  color: #252638;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#navbar .navbar-nav .nav-item:hover .nav-link {
+  color: #e31e2f;
 }
 
