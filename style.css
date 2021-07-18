@@ -88,3 +88,37 @@
   color: #e31e2f;
 }
 /*# sourceMappingURL=style.css.map */
+
+.cotainerProj{
+  margin-top: 15px;
+  padding-top: 15px;
+  background-color: #252638 ;
+}
+.heading{
+  text-transform: uppercase;
+  font-size: 35px;
+  text-align: center;
+  color: white;
+}
+
+.projects{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.projects > .card{
+  overflow: hidden;
+  border-radius: 20px;
+  transition: all 0.2s; 
+  
+}
+
+.projects > .card:hover{
+  transform: scale(1.1);
+
+}
