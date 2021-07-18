@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 @import url("./yogi.css");
 @import url("./carousel.css");
-@import url("./scroll.css");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -10,8 +9,32 @@
   font-family: 'DM sans';
 }
 
-#navbar {
+#topper {
+  width: 100vw;
+  height: 40px;
+  background-color: #252638;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
+#topper #date, #topper #time {
+  font-size: 14px;
+  padding: 0px 10px;
+  color: white;
+}
+
+#topper #divider {
+  height: 30px;
+  width: 1px;
+  background-color: white;
+  opacity: 0.3;
+}
+
+#navbar {
   top: 0;
   left: 0;
   right: 0;
@@ -86,5 +109,68 @@
 #navbar .navbar-nav .nav-item:hover .nav-link {
   color: #e31e2f;
 }
-/*# sourceMappingURL=style.css.map */
 
+#impLinks {
+  position: fixed;
+  width: 300px;
+  top: 105px;
+  background-color: #fdfdfd;
+  text-align: center;
+  z-index: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+#impLinks div {
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+}
+
+#impLinks div #header {
+  font-weight: 500;
+  font-size: 20px;
+  padding: 18px;
+}
+
+#impLinks div li {
+  list-style: none;
+  padding: 15px;
+  border-bottom: rgba(0, 0, 0, 0.2) 1px solid;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+#impLinks div li:hover {
+  color: #e31e2f;
+  font-size: 14px;
+}
+
+#impLinks #impbtn {
+  position: fixed;
+  top: 0;
+  left: 246px;
+  border: none;
+  padding: 20px;
+  padding-left: 18px;
+  padding-right: 22px;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  background-color: #e31e2f;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+#impLinks #impbtn:hover {
+  background-color: #b91826;
+}
+/*# sourceMappingURL=style.css.map */

@@ -9,6 +9,28 @@
     font-family:'DM sans';
 }
 
+
+#topper{
+    width: 100vw;
+    height: 40px;
+    background-color: #252638;
+    display: flex;
+    align-items: center;
+
+    #date, #time{
+        font-size: 14px;
+        padding: 0px 10px;
+        color: white;
+    }
+
+    #divider{
+        height: 30px;
+        width: 1px;
+        background-color: white;
+        opacity: 0.3;
+    }
+}
+
 #navbar{
     top: 0;
     left: 0;
@@ -97,4 +119,65 @@
     }
 }
 
+
+#impLinks{
+    position: fixed;
+    width: 300px;
+    top: 105px;
+    background-color: #fdfdfd;
+    text-align: center;
+    z-index: 1;
+    
+    div{
+        display: block;
+        position: relative;
+        text-transform: uppercase;
+        #header{
+            font-weight: 500;
+            font-size: 20px;
+            padding: 18px;
+        }
+
+        li{
+            list-style: none;
+            padding: 15px;
+            border-bottom: rgba(0,0,0,0.2) 1px solid;
+            cursor: pointer;
+            transition: all 0.25s ease;
+
+            &:hover{
+                color: #e31e2f;
+                font-size: 14px;
+            }
+        }
+    }
+
+    transform: translateX(0);
+    transition: all 0.25s ease;
+
+    #impbtn{
+        position: fixed;
+        top:0;
+        left: 246px;
+        border: none;
+        padding:20px;
+        padding-left: 18px;
+        padding-right: 22px;
+        text-align: center;
+        vertical-align: middle;
+        border-bottom-left-radius: 50%;
+        border-top-left-radius: 50%;
+        background-color: #e31e2f;
+        color: white;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        &:hover{
+            background-color: #b91826;
+        }
+        
+    }
+
+}
 
