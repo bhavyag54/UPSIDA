@@ -38,6 +38,8 @@
     left: 0;
     right: 0;
     z-index: 1;
+    text-transform: uppercase;
+    font-size: 14px;
     .container-fluid{
         vertical-align: middle;
         background-color: white;
@@ -72,7 +74,7 @@
         .dropdown-menu{
             overflow-x: hidden;
             padding: 0px 10px;
-            
+            font-size: 14px;
             .dropdown-item{
                 word-wrap: break-word;
                 border-bottom: 1px solid black;

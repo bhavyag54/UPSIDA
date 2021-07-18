@@ -41,6 +41,8 @@
   left: 0;
   right: 0;
   z-index: 1;
+  text-transform: uppercase;
+  font-size: 14px;
   background-color: white;
   height: 80px;
   padding: 0px;
@@ -72,6 +74,7 @@
 #navbar .dropdown .dropdown-menu {
   overflow-x: hidden;
   padding: 0px 10px;
+  font-size: 14px;
 }
 
 #navbar .dropdown .dropdown-menu .dropdown-item {
