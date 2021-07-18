@@ -10,7 +10,9 @@
 }
 
 #topper {
-  width: 100vw;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 40px;
   background-color: #252638;
   display: -webkit-box;
