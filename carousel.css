@@ -1,8 +1,8 @@
 #carouselExampleFade{
-    width: 80%;
-    margin: 30px auto;
+    width: 75%;
+    margin: 0px 0px;
+    margin-bottom: 50px;
     z-index: 0;
-    border-radius: 20px;
     overflow: hidden;
 
 
