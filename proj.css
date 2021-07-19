@@ -8,6 +8,10 @@
     font-size: 35px;
     text-align: center;
     color: white;
+    text-decoration: underline;
+    text-decoration-color: #EA215A;
+    text-decoration-thickness: 5px ;
+    text-underline-offset: 10px;
   }
   
   .projects{
@@ -17,13 +21,16 @@
     flex-wrap: wrap;
     row-gap: 20px;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
   }
   
   .projects > .card{
     overflow: hidden;
     border-radius: 20px;
+
     transition: all 0.2s; 
+    height: 300px;
+    width: 200px;
     
   }
   
@@ -31,3 +38,12 @@
     transform: scale(1.1);
   
   }
+
+  .projects > .card > img{
+    border: 0.5px solid black;
+    filter: contrast(120%);
+    height: 150px;
+    width: 201px;
+  }
+
+  
