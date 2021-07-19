@@ -1,9 +1,9 @@
-
-  
 .news .panel {
   border: 5px solid rgb(151, 148, 148);
-  box-shadow: 12px 20px 30px 1px rgba(90, 66, 177, 0.2);;
-  }
+  box-shadow: 12px 20px 30px 1px rgba(90, 66, 177, 0.2);
+
+  left: 10px;
+}
   
   .news {
     position: relative;
