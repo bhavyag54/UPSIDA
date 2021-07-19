@@ -19,7 +19,8 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    row-gap: 20px;
+    row-gap: 50px;
+    column-gap: 20px;
     align-items: center;
     padding-bottom: 50px;
   }
@@ -35,7 +36,7 @@
   }
   
   .projects > .card:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
   
   }
 
