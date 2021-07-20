@@ -2,6 +2,7 @@
 @import url('./yogi.css');
 @import url('./carousel.css');
 @import url('./proj.css');
+@import url("./footer.css");
 *{
     box-sizing: border-box;
     padding: none;
@@ -156,7 +157,7 @@
         }
     }
 
-    transform: translateX(0);
+    transform: translateX(-100%);
     transition: all 0.25s ease;
 
     #impbtn{
@@ -169,11 +170,11 @@
         padding-right: 22px;
         text-align: center;
         vertical-align: middle;
-        border-bottom-left-radius: 50%;
-        border-top-left-radius: 50%;
         background-color: #e31e2f;
         color: white;
         font-size: 14px;
+        left : 300px;
+        border-radius:0px 50% 50% 0px;
         font-weight: 700;
         cursor: pointer;
         transition: all 0.25s ease;

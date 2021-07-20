@@ -2,7 +2,6 @@
 @import url("./yogi.css");
 @import url("./carousel.css");
 @import url("./proj.css");
-@import url("./scroll.css");
 @import url("./footer.css");
 * {
   -webkit-box-sizing: border-box;
@@ -125,8 +124,8 @@
   background-color: #fdfdfd;
   text-align: center;
   z-index: 1;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
@@ -167,11 +166,11 @@
   padding-right: 22px;
   text-align: center;
   vertical-align: middle;
-  border-bottom-left-radius: 50%;
-  border-top-left-radius: 50%;
   background-color: #e31e2f;
   color: white;
   font-size: 14px;
+  left: 300px;
+  border-radius: 0px 50% 50% 0px;
   font-weight: 700;
   cursor: pointer;
   -webkit-transition: all 0.25s ease;
