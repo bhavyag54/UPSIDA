@@ -1,14 +1,15 @@
 #carouselExampleFade{
-    width: 80%;
-    margin: 30px auto;
+    width: 90%;
+    margin: 0px auto;
+    margin-bottom: 50px;
     z-index: 0;
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
 
 
   }
   .carousel-inner img {
-    
     height: 400px;
   }
   
@@ -16,6 +17,6 @@
   
   .carousel-control-next,
   .carousel-control-prev /*, .carousel-indicators */ {
-      filter: brightness(100%);
+      filter: brightness(80%);
   }
   

@@ -14,28 +14,39 @@ for(let i = 0; i<3;i++)
 
 //imp
 
-let impstatus = true;
+let impstatus = false;
 const impbtn = document.getElementById('impbtn');
 const impbar = document.getElementById('impLinks');
 
-impbtn.addEventListener('click', () => {
+
+const impOpen = () =>{
+    impbar.style.transform = 'translateX(0)';
+    impstatus = true;
+    impbtn.innerText = '←';
+    impbtn.style.left = '246px';
+    impbtn.style.borderRadius = '50% 0 0 50%';
+}
+
+
+const impClose = () => {
+    impbar.style.transform = 'translateX(-100%)';
+    impstatus = false;
+    impbtn.innerText = '→'
+    impbtn.style.left = '300px';
+    impbtn.style.borderRadius = '0px 50% 50% 0px';
+}
+
+setTimeout(impOpen, 3000);
+setTimeout(impClose, 8000);
+
+impbtn.addEventListener('click', () =>{
     if(impstatus)
-    {
-        impbar.style.transform = 'translateX(-100%)';
-        impstatus = false;
-        impbtn.innerText = '→'
-        impbtn.style.left = '300px';
-        impbtn.style.borderRadius = '0px 50% 50% 0px';
-    }
+        impClose();
     else
-    {  
-        impbar.style.transform = 'translateX(0)';
-        impstatus = true;
-        impbtn.innerText = '←';
-        impbtn.style.left = '246px';
-        impbtn.style.borderRadius = '50% 0 0 50%';
-    }
+        impOpen();
 })
+
+
 
 //imp end
 
