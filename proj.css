@@ -5,7 +5,7 @@
   }
   .heading{
     text-transform: uppercase;
-    font-size: 35px;
+    font-size: 25px;
     text-align: center;
     color: white;
     text-decoration: underline;
@@ -27,7 +27,7 @@
   
   .projects > .card{
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 10px 0px 10px 0px;
 
     transition: all 0.2s; 
     height: 300px;
@@ -41,10 +41,25 @@
   }
 
   .projects > .card > img{
-    border: 0.5px solid black;
     filter: contrast(120%);
     height: 150px;
     width: 201px;
+    object-fit: cover;
+  }
+
+  .card-body{
+    position: relative;
+  }
+
+  .projects > .card > .card-body > .mine {
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0px;
+    border: none;
   }
 
   
