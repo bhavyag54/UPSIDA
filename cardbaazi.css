@@ -1,0 +1,42 @@
+.card-deck {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  column-gap: 20px;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.containercb {
+  margin-top: 15px;
+  padding-top: 15px;
+  background-color: #EA215A;
+}
+
+.headingcb {
+  text-transform: uppercase;
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #252638;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 10px;
+}
+.card-deck > .card{
+overflow: hidden;
+border-radius: 20px;
+transition: all 0.2s;
+height: 550px;
+width: 300px;
+}
+.card-deck > .card:hover{
+  transform: scale(1.05);
+}
+.card-deck > .card > img{
+  height: 300px;
+  width: 300px;
+}
