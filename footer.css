@@ -4,7 +4,11 @@ footer { width:100%;
     align-items: center;
     background-color:#E31E2F; 
     min-height:20px; 
-    padding:10px 0px 25px 0px ;
+    padding:10px;
+    padding-top: 16px;
+    align-items: center;
+    vertical-align: middle;
+
 left: 0;
 right: 0;
 
@@ -38,7 +42,7 @@ footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:2px;}
 }
 
 
-.social_footer_ul { display:table; margin:15px auto 0 auto; list-style-type:none;  }
+.social_footer_ul { display:table; list-style-type:none;  }
 .social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
 .social_footer_ul li a { color:#CCC; border:1px solid #CCC; padding:8px;border-radius:50%;}
 .social_footer_ul li i {  width:20px; height:20px; text-align:center;}
