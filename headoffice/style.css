@@ -1,0 +1,119 @@
+/* //office part */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+@import url("./yogi.css");
+@import url("./carousel.css");
+@import url("./scroll.css");
+@import url("./footer.css");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: none;
+  margin: none;
+  font-family: 'DM sans';
+}
+
+#topper {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-color: #252638;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#topper #date, #topper #time {
+  font-size: 14px;
+  padding: 0px 10px;
+  color: white;
+}
+
+#topper #divider {
+  height: 30px;
+  width: 1px;
+  background-color: white;
+  opacity: 0.3;
+}
+
+#navbar {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  text-transform: uppercase;
+  font-size: 14px;
+  background-color: white;
+  height: 80px;
+  padding: 0px;
+}
+
+#navbar .container-fluid {
+  vertical-align: middle;
+  background-color: white;
+}
+
+#navbar .dropdown-item a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+#navbar .dropdown-item:hover {
+  background-color: white;
+}
+
+#navbar .dropdown-item:hover a {
+  color: #e31e2f;
+}
+
+#navbar .navbar-brand img {
+  width: 150px;
+}
+
+#navbar .dropdown .dropdown-menu {
+  overflow-x: hidden;
+  padding: 0px 10px;
+  font-size: 14px;
+}
+
+#navbar .dropdown .dropdown-menu .dropdown-item {
+  word-wrap: break-word;
+  border-bottom: 1px solid black;
+}
+
+#navbar .dropdown .dropdown-menu :last-child {
+  border-bottom: none;
+}
+
+
+#navbar #navbar-btn:hover {
+  background-color: #e6e6e6;
+}
+
+#navbar .navbar-nav .nav-item {
+  text-align: center;
+}
+
+#navbar .navbar-nav .nav-item .nav-link {
+  color: #252638;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#navbar .navbar-nav .nav-item:hover .nav-link {
+  color: #e31e2f;
+}
+
+h1 {
+
+  text-align: center;
+  text-shadow: 2px 2px #e31e2f;
+}
+
+/*# sourceMappingURL=style.css.map */
