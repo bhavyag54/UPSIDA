@@ -1,0 +1,14 @@
+#m1.li{
+    text-align: left;
+
+}
+a:hover{
+    background-color: rebeccapurple;
+    color: red;
+}
+ul:hover{
+    color: red;
+}
+li:hover{
+    color: brown;
+}
