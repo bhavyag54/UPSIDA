@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
-@import url("./yogi.css");
-@import url("./carousel.css");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -9,38 +7,11 @@
   font-family: 'DM sans';
 }
 
-#topper {
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 40px;
-  background-color: #252638;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#topper #date, #topper #time {
-  font-size: 14px;
-  padding: 0px 10px;
-  color: white;
-}
-
-#topper #divider {
-  height: 30px;
-  width: 1px;
-  background-color: white;
-  opacity: 0.3;
-}
-
 #navbar {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 2;
   text-transform: uppercase;
   font-size: 14px;
   background-color: white;
@@ -115,67 +86,97 @@
   color: #e31e2f;
 }
 
-#impLinks {
-  position: fixed;
-  width: 300px;
-  top: 105px;
-  background-color: #fdfdfd;
-  text-align: center;
-  z-index: 1;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-}
-
-#impLinks div {
-  display: block;
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95vw;
   position: relative;
-  text-transform: uppercase;
+  margin: 10px 2.5vw;
+  height: 60vh;
+  overflow: hidden;
 }
 
-#impLinks div #header {
-  font-weight: 500;
-  font-size: 20px;
-  padding: 18px;
-}
-
-#impLinks div li {
-  list-style: none;
-  padding: 15px;
-  border-bottom: rgba(0, 0, 0, 0.2) 1px solid;
-  cursor: pointer;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-}
-
-#impLinks div li:hover {
-  color: #e31e2f;
-  font-size: 14px;
-}
-
-#impLinks #impbtn {
-  position: fixed;
+#container #banner {
+  position: relative;
+  left: 0;
   top: 0;
-  left: 246px;
-  border: none;
-  padding: 20px;
-  padding-left: 18px;
-  padding-right: 22px;
+  width: 70%;
+}
+
+#container #banner img {
+  width: 100%;
+}
+
+#container #divider {
+  width: 2px;
+  height: 100%;
+  position: relative;
+  border-radius: 100px;
+  background-color: #000000;
+  opacity: 0.3;
+}
+
+#container #con2 {
+  margin: auto;
+}
+
+#container #con2 #radios {
+  font-weight: 600;
+}
+
+#container #con2 #radios label {
+  margin-right: 10px;
+}
+
+#container #con2 #radios input {
+  margin-left: 0px;
+  cursor: pointer;
+}
+
+#container #con2 #inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#container #con2 #captcha {
+  width: 100px;
+  height: 50px;
+  margin-top: 20px;
+  background-color: #252638;
+  color: white;
   text-align: center;
   vertical-align: middle;
-  border-bottom-left-radius: 50%;
-  border-top-left-radius: 50%;
-  background-color: #e31e2f;
-  color: white;
-  font-size: 14px;
-  font-weight: 700;
-  cursor: pointer;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px;
 }
 
-#impLinks #impbtn:hover {
-  background-color: #b91826;
+#container #con2 #login {
+  margin-top: 20px;
+  width: 100%;
+  border: none;
+  background-color: #e31e2f;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 8px 15px;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-radius: 2px;
+}
+
+#container #con2 #login:hover {
+  border-radius: 50px;
+  letter-spacing: 2px;
 }
 /*# sourceMappingURL=style.css.map */
