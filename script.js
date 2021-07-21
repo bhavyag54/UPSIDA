@@ -63,3 +63,24 @@ setInterval(() => {
 
 },1000);
 
+// imp ends
+
+// news modal
+
+const newsModalBtn = document.getElementById('news-modal-btn')
+const close = document.getElementById('news-modal-close');
+newsModalBtn.addEventListener('click', () => {
+    const modal = document.getElementById('news-modal');
+    modal.style.opacity = 1;
+    modal.style.visibility = 'visible';
+    modal.style.zIndex = 10;
+})
+
+close.addEventListener('click', () => {
+    const modal = document.getElementById('news-modal');
+    modal.style.opacity = 0;
+    modal.style.visibility = 'hidden';
+    modal.style.zIndex = -10;
+})
+
+// news modal ends

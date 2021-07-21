@@ -1,5 +1,5 @@
 .card-deck {
-  padding-top: 50px;
+  padding: 50px 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -7,13 +7,14 @@
   row-gap: 50px;
   column-gap: 20px;
   align-items: center;
-  padding-bottom: 50px;
+  
 }
 
 .containercb {
   margin-top: 15px;
   padding-top: 15px;
-  background-color: #EA215A;
+  background-color: #E31E2F;
+  
 }
 
 .headingcb {
@@ -28,15 +29,38 @@
 }
 .card-deck > .card{
 overflow: hidden;
-border-radius: 20px;
+border-radius: 5px;
 transition: all 0.2s;
-height: 550px;
+height: 420px;
 width: 300px;
 }
 .card-deck > .card:hover{
-  transform: scale(1.05);
+  
 }
 .card-deck > .card > img{
-  height: 300px;
+  height: 250px;
   width: 300px;
+}
+
+.card-deck .card .card-body .card-title{
+  font-size: 17px;
+}
+
+.card-deck .card .card-body .card-text{
+  font-size: 13px;
+  text-align: left;
+}
+
+.card .card-body .mine{
+  
+  position: absolute;
+  bottom: 0;
+  width: 300px;
+  left: -13px;
+  border-radius: 0;
+  border: none;
+}
+
+.card .card-body{
+  position: relative;
 }

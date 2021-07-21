@@ -1,5 +1,4 @@
 .cotainerProj{
-    margin-top: 15px;
     padding-top: 15px;
     background-color: #252638 ;
   }
@@ -9,7 +8,7 @@
     text-align: center;
     color: white;
     text-decoration: underline;
-    text-decoration-color: #EA215A;
+    text-decoration-color:#E31E2F;
     text-decoration-thickness: 5px ;
     text-underline-offset: 10px;
   }

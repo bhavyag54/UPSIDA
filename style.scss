@@ -201,5 +201,105 @@
         width: 25%;
         border-left: 1px solid rgba(0,0,0,0.3);
         background-color: #ffffff;
+
+        #heading{
+            font-size: 18px;
+            color:#252638;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        #design{
+            margin-top: 2px;
+            display: flex;
+            justify-content: center;
+            column-gap: 4px;
+            #q1{
+                height: 4px;
+                width: 6px;
+                background-color: #e31e2f;
+            }
+
+            #q2{
+                height: 4px;
+                width: 30px;
+                background-color: #e31e2f;
+            }
+
+            #q3{
+                height: 4px;
+                width: 6px;
+                background-color: #e31e2f;
+            }
+        }
+
+        #news-modal-btn{
+            position: absolute;
+            bottom: 0;
+            width:90%;
+            text-align: center;
+            border: none;
+            margin: 0px 5%;
+            height: 40px;
+            color: white;
+            transition: all 0.3s;
+            background-color: #252638;
+
+            span{
+                transition: all 0.3s;
+            }
+
+            &:hover{
+                span{
+                letter-spacing: 2px;
+                }
+
+                border-radius: 50px;
+            }
+        }
+
+        #news-modal{
+            position: fixed;
+            background-color: rgba(0,0,0,0.5);
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -10;
+            opacity: 0;
+            visibility: 0;
+            transition: all 0.25s linear;
+
+            #news-modal-close{
+                z-index: 1;
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin: 10px;
+                margin-left: 20px;
+                color: white;
+                font-weight: 600;
+                font-size: 35px;
+                cursor: pointer;
+            }
+
+            #news-modal-content{
+                display: flex;
+                background-color: transparent;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin-top: 60px;
+
+                #modal-news{
+                    height: 80vh;
+                    width: 30vw;
+                    background-color: #ffffff;
+                    border-radius: 10px;
+                    column-gap: 20px;
+                }
+            }
+        }
+
     }
 }
