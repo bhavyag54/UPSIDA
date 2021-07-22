@@ -1,8 +1,7 @@
 /* //office part */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 @import url("./yogi.css");
-@import url("./carousel.css");
-@import url("./scroll.css");
+
 @import url("./footer.css");
 * {
   -webkit-box-sizing: border-box;
@@ -116,4 +115,4 @@ h1 {
   text-shadow: 2px 2px #e31e2f;
 }
 
-/*# sourceMappingURL=style.css.map */
+
