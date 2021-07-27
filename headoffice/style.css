@@ -1,8 +1,6 @@
-/* //office part */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 @import url("./yogi.css");
-
-@import url("./footer.css");
+@import url("./carousel.css");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -88,6 +86,14 @@
   border-bottom: none;
 }
 
+#navbar #navbar-btn {
+  top: 0;
+  right: 0;
+  margin: 20px;
+  background-color: white;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
 
 #navbar #navbar-btn:hover {
   background-color: #e6e6e6;
@@ -109,10 +115,10 @@
   color: #e31e2f;
 }
 
-h1 {
-
+#heading-head{
+  
+  font-size: 25px;
   text-align: center;
-  text-shadow: 2px 2px #e31e2f;
+  text-transform: uppercase;
+  font-weight: 600;
 }
-
-

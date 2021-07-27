@@ -1,6 +1,4 @@
-
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -72,6 +70,7 @@
 }
 
 #navbar .dropdown .dropdown-menu {
+ 
   overflow-x: hidden;
   padding: 0px 10px;
   font-size: 14px;
@@ -115,26 +114,41 @@
   color: #e31e2f;
 }
 
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  min-height: 63.1vh;
+  justify-content: center;
+  align-items: center;
+}
+.headingg{
+  background-color: #252638;
+  text-align: center;
+  padding:20px;
+  color: #FFFFFF;
+  font-size: 27px;
+}
 
-.col_white_amrc { color:#FFF;}
 footer { width:100%; 
+  
+
     display: flex;
     align-items: center;
     background-color:#E31E2F; 
-    min-height:20px; 
-    padding:10px;
-    padding-top: 16px;
-    align-items: center;
-    vertical-align: middle;
-
+    min-height:10px; 
+    padding:10px 0px 25px 0px ;
+  
 left: 0;
 right: 0;
 
 bottom: 0;}
+
 .container{
     display: flex;
     align-items: center;
     vertical-align: center;
+    justify-content: center;
     text-align: center;
 }
 .pt2 { padding-top:10px ; margin-bottom:20px ;}
@@ -160,46 +174,7 @@ footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:2px;}
 }
 
 
-.social_footer_ul { display:table; list-style-type:none;  }
+.social_footer_ul { display:table; margin:15px auto 0 auto; list-style-type:none;  }
 .social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
 .social_footer_ul li a { color:#CCC; border:1px solid #CCC; padding:8px;border-radius:50%;}
 .social_footer_ul li i {  width:20px; height:20px; text-align:center;}
-
-.fa {
-    position: relative;
-    font-size: 30px;
-    width: 40px;
-    text-align: center;
-    text-decoration: none;
-    transition: all 0.25s linear;
-    color: black;
-    background: white;
-    right: 0;
-  }
-  
-  .fa-facebook:hover {
-    color: #3b5998;
-    
-  }
-  
-  .fa-twitter:hover {
-  color: #55ACEE;
-  } 
-
-  .fa-instagram:hover{
-    color: purple;
-}
-.fa-linkedin:hover{
-    color:#3b5998;
-}
-
-  .container{
-    display: flex;
-    position: relative;
-    justify-content: space-around;
-    align-items: center;
-    vertical-align: middle;
-    flex-wrap: wrap;
-    row-gap: 50px;
-    column-gap: 20px;
-  }

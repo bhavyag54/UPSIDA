@@ -67,33 +67,33 @@
   font-size: 13px;
 }
 
-  .fa {
-    position: relative;
-    font-size: 30px;
-    width: 40px;
-    text-align: center;
-    text-decoration: none;
-    transition: all 0.25s linear;
-    color: black;
-    background: white;
-    right: 0;
-  }
+.bi {
+  position: relative;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.25s linear;
+  color: black;
+  background: white;
+  right: 0;
+}
+
+.bi-facebook:hover {
+  color: #3b5998;
   
-  .fa-facebook:hover {
-    color: #3b5998;
-    
-  }
-  
-  .fa-twitter:hover {
-  color: #55ACEE;
-  } 
+}
+
+.bi-twitter:hover {
+color: #55ACEE;
+} 
 
   
 
   .container{
     display: flex;
     position: relative;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     vertical-align: middle;
     flex-wrap: wrap;
@@ -118,5 +118,5 @@
 
   
 #yogi-section{
-  width: 75%;
+  width: 100%;
 }
