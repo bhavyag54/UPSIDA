@@ -4,10 +4,8 @@
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  row-gap: 50px;
-  column-gap: 20px;
+  row-gap: 30px;
   align-items: center;
-  
 }
 
 .containercb {
@@ -34,9 +32,7 @@ transition: all 0.2s;
 height: 420px;
 width: 300px;
 }
-.card-deck > .card:hover{
-  
-}
+
 .card-deck > .card > img{
   height: 250px;
   width: 300px;
@@ -55,8 +51,8 @@ width: 300px;
   
   position: absolute;
   bottom: 0;
-  width: 300px;
-  left: -13px;
+  width: 100%;
+  left: 0;
   border-radius: 0;
   border: none;
 }

@@ -1,14 +1,23 @@
 const dropdowns = document.getElementsByClassName('dropdown');
 const y = document.body.offsetWidth;
 
-dropdowns[0].childNodes[3].style.left = `-212px`;
+dropdowns[0].childNodes[3].style.left = `-0px`;
 dropdowns[1].childNodes[3].style.left = `-50px`;
 dropdowns[2].childNodes[3].style.left = `-130px`;
 
-for(let i = 0; i<3;i++)
-{
-    dropdowns[i].childNodes[1].addEventListener('click',() => dropdowns[i].scrollIntoView(true))
-}
+document.addEventListener('scroll', () => {
+    if(window.scrollY > 40)
+    {
+        document.getElementById('navbar').style.position = "fixed";
+    }
+
+    if(window.scrollY <= 40)
+    {
+        document.getElementById('navbar').style.position = "";
+    }
+    
+})
+
 
 
 
@@ -68,19 +77,56 @@ setInterval(() => {
 // news modal
 
 const newsModalBtn = document.getElementById('news-modal-btn')
-const close = document.getElementById('news-modal-close');
+const newsclose = document.getElementById('news-modal-close');
+const newsmodal = document.getElementById('news-modal');
 newsModalBtn.addEventListener('click', () => {
-    const modal = document.getElementById('news-modal');
-    modal.style.opacity = 1;
-    modal.style.visibility = 'visible';
-    modal.style.zIndex = 10;
+    newsmodal.style.opacity = 1;
+    newsmodal.style.visibility = 'visible';
+    newsmodal.style.zIndex = 10;
 })
 
-close.addEventListener('click', () => {
-    const modal = document.getElementById('news-modal');
-    modal.style.opacity = 0;
-    modal.style.visibility = 'hidden';
-    modal.style.zIndex = -10;
+newsclose.addEventListener('click', () => {
+    newsmodal.style.opacity = 0;
+    newsmodal.style.visibility = 'hidden';
+    newsmodal.style.zIndex = -10;
 })
 
 // news modal ends
+
+
+// important pdfs modal
+
+const pdfModalBtn = document.getElementById('pdf-modal-btn')
+const pdfclose = document.getElementById('pdf-modal-close');
+const pdfmodal = document.getElementById('pdf-modal');
+pdfModalBtn.addEventListener('click', () => {
+    pdfmodal.style.opacity = 1;
+    pdfmodal.style.visibility = 'visible';
+    pdfmodal.style.zIndex = 10;
+})
+
+pdfclose.addEventListener('click', () => {
+    pdfmodal.style.opacity = 0;
+    pdfmodal.style.visibility = 'hidden';
+    pdfmodal.style.zIndex = -10;
+})
+
+
+window.onclick = function(event) {
+    if(event.target === pdfmodal)
+    {
+        pdfmodal.style.opacity = 0;
+        pdfmodal.style.visibility = 'hidden';
+        pdfmodal.style.zIndex = -10;
+    }
+
+    if(event.target === newsmodal)
+    {
+        newsmodal.style.opacity = 0;
+        newsmodal.style.visibility = 'hidden';
+        newsmodal.style.zIndex = -10;
+    }
+ }
+
+
+// important pdfs modal ends

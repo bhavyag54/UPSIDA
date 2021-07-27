@@ -187,17 +187,27 @@
   margin-top: 20px;
 }
 
-#body-container #new-links {
-  position: absolute;
-  right: 0;
-  top: 0;
+#news-pdfs {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 90vw;
+  height: 75vh;
+  margin: 20px 5vw;
+}
+
+#news-pdfs #new-links {
+  position: relative;
   height: 100%;
-  width: 25%;
-  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  width: 40%;
   background-color: #ffffff;
 }
 
-#body-container #new-links #heading {
+#news-pdfs #new-links #heading {
   font-size: 18px;
   color: #252638;
   text-align: center;
@@ -205,7 +215,7 @@
   font-weight: 600;
 }
 
-#body-container #new-links #design {
+#news-pdfs #new-links #design {
   margin-top: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -217,25 +227,25 @@
           column-gap: 4px;
 }
 
-#body-container #new-links #design #q1 {
+#news-pdfs #new-links #design #q1 {
   height: 4px;
   width: 6px;
   background-color: #e31e2f;
 }
 
-#body-container #new-links #design #q2 {
+#news-pdfs #new-links #design #q2 {
   height: 4px;
   width: 30px;
   background-color: #e31e2f;
 }
 
-#body-container #new-links #design #q3 {
+#news-pdfs #new-links #design #q3 {
   height: 4px;
   width: 6px;
   background-color: #e31e2f;
 }
 
-#body-container #new-links #news-modal-btn {
+#news-pdfs #new-links #news-modal-btn {
   position: absolute;
   bottom: 0;
   width: 90%;
@@ -249,38 +259,39 @@
   background-color: #252638;
 }
 
-#body-container #new-links #news-modal-btn span {
+#news-pdfs #new-links #news-modal-btn span {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-#body-container #new-links #news-modal-btn:hover {
+#news-pdfs #new-links #news-modal-btn:hover {
   border-radius: 50px;
 }
 
-#body-container #new-links #news-modal-btn:hover span {
+#news-pdfs #new-links #news-modal-btn:hover span {
   letter-spacing: 2px;
 }
 
-#body-container #new-links #news-modal {
+#news-pdfs #new-links #news-modal {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
   top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
   z-index: -10;
   opacity: 0;
+  width: calc(100% + 50px);
+  height: 100%;
+  overflow: auto;
   visibility: 0;
   -webkit-transition: all 0.25s linear;
   transition: all 0.25s linear;
 }
 
-#body-container #new-links #news-modal #news-modal-close {
+#news-pdfs #new-links #news-modal #news-modal-close {
   z-index: 1;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 50px;
   margin: 10px;
   margin-left: 20px;
   color: white;
@@ -289,24 +300,158 @@
   cursor: pointer;
 }
 
-#body-container #new-links #news-modal #news-modal-content {
+#news-pdfs #new-links #news-modal #news-modal-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: transparent;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 750px;
+  margin: 60px auto;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
 }
 
-#body-container #new-links #news-modal #news-modal-content #modal-news {
-  height: 80vh;
-  width: 30vw;
+#news-pdfs #new-links #news-modal #news-modal-content #modal-news {
+  height: 60px;
+  width: 750px;
   background-color: #ffffff;
-  border-radius: 10px;
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
+  border-radius: 5px;
+}
+
+#news-pdfs #divider {
+  height: 100%;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#news-pdfs #pdf-links {
+  position: relative;
+  height: 100%;
+  width: 40%;
+  background-color: #ffffff;
+}
+
+#news-pdfs #pdf-links #heading {
+  font-size: 18px;
+  color: #252638;
+  text-align: center;
+  font-weight: 600;
+}
+
+#news-pdfs #pdf-links #design {
+  margin-top: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 4px;
+          column-gap: 4px;
+}
+
+#news-pdfs #pdf-links #design #q1 {
+  height: 4px;
+  width: 6px;
+  background-color: #e31e2f;
+}
+
+#news-pdfs #pdf-links #design #q2 {
+  height: 4px;
+  width: 30px;
+  background-color: #e31e2f;
+}
+
+#news-pdfs #pdf-links #design #q3 {
+  height: 4px;
+  width: 6px;
+  background-color: #e31e2f;
+}
+
+#news-pdfs #pdf-links #pdf-modal-btn {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  text-align: center;
+  border: none;
+  margin: 0px 5%;
+  height: 40px;
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #252638;
+}
+
+#news-pdfs #pdf-links #pdf-modal-btn span {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#news-pdfs #pdf-links #pdf-modal-btn:hover {
+  border-radius: 50px;
+}
+
+#news-pdfs #pdf-links #pdf-modal-btn:hover span {
+  letter-spacing: 2px;
+}
+
+#news-pdfs #pdf-links #pdf-modal {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  width: calc(100% + 50px);
+  height: 100%;
+  overflow: auto;
+  z-index: -10;
+  opacity: 0;
+  visibility: 0;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+#news-pdfs #pdf-links #pdf-modal #pdf-modal-close {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 50px;
+  margin: 10px;
+  margin-left: 20px;
+  color: white;
+  font-weight: 600;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+#news-pdfs #pdf-links #pdf-modal #pdf-modal-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: transparent;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 750px;
+  margin: 60px auto;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+}
+
+#news-pdfs #pdf-links #pdf-modal #pdf-modal-content #modal-pdf {
+  height: 60px;
+  width: 750px;
+  background-color: #ffffff;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=style.css.map */
