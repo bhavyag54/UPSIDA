@@ -10,3 +10,5 @@ setInterval(() => {
     tim.innerText = new Date().toTimeString().slice(0,9);
 
 },1000);
+
+
