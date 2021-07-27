@@ -1,3 +1,4 @@
+
 .col_white_amrc { color:#FFF;}
 footer { width:100%; 
     display: flex;
@@ -46,3 +47,44 @@ footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:2px;}
 .social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
 .social_footer_ul li a { color:#CCC; border:1px solid #CCC; padding:8px;border-radius:50%;}
 .social_footer_ul li i {  width:20px; height:20px; text-align:center;}
+
+.fa {
+    position: relative;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.25s linear;
+    color: black;
+    background: white;
+    right: 0;
+  }
+  
+  .fa-facebook:hover {
+    color: #3b5998;
+    
+  }
+  
+  .fa-twitter:hover {
+  color: #55ACEE;
+  } 
+  .fa-instagram:hover{
+      color: purple;
+  }
+  .fa-linkedin:hover{
+      color:#3b5998;
+  }
+
+  
+
+  .container{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 20px;
+  }
+  
