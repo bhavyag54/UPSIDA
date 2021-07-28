@@ -28,6 +28,7 @@
   text-decoration: none;
   color: black;
   font-weight: 700;
+  word-break: break-all;
 }
 
 #navbar .dropdown-item:hover {

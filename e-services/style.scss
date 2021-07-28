@@ -14,17 +14,19 @@
     right: 0;
     z-index: 2;
     text-transform: uppercase;
-    font-size: 14px;
+      font-size: 14px;
     .container-fluid{
         vertical-align: middle;
         background-color: white;
     }
 
     .dropdown-item{
+
         a{
             text-decoration: none;
             color: black;
             font-weight: 700;
+            word-break: break-all;
         }
 
         &:hover{
