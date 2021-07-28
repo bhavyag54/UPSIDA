@@ -181,21 +181,19 @@
   background-color: #b91826;
 }
 
-/* ContiainerPolicy */
-
-.containerPol {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+/* office */
+.offcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.heading1 {
-  display: flex;
+.offcontainer > .heading{
+    display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10px;
   width: 100%;
   left: 0;
   text-transform: uppercase;
@@ -207,47 +205,16 @@
   text-underline-offset: 10px;
 }
 
-.IIIP {
-  margin-top: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.offcontainer > .tableoff > table{
+    background-color: rgb(207, 223, 241);
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
 }
-.IIIP > .heading2 {
-  text-transform: uppercase;
-  font-size: 30px;
-  text-align: center;
-  color: #ffffff;
-  background-color: #252638;
-  padding: 20px;
+.offcontainer > .tableoff > table > tr > td > a{
+    text-decoration: none;
+    color: #b91826;
 }
-.pdfcard1 {
-  margin-top: 20px;
-  padding-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  row-gap: 40px;
-  padding: 20px;
-}
-.pdfcard1 > .card {
-  height: 400px;
-  width: 300px;
-  background-color: #252638;
-}
-
-.pdfcard1 > .card > img {
-  height: 300px;
-}
-
-.pdfcard1 > .card > .card-body > a {
-  text-decoration: none;
-  color: white;
-  font-size: 15px;
-}
-
-/* Container policy ends here */
 
 /* footer */
 .col_white_amrc { color:#FFF;}
@@ -300,45 +267,3 @@ footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:2px;}
 .social_footer_ul li a { color:#CCC; border:1px solid #CCC; padding:8px;border-radius:50%;}
 .social_footer_ul li i {  width:20px; height:20px; text-align:center;}
 
-
-@media (max-width: 639px) and (min-width:439px){
-  .pdfcard1 > .card {
-    height: 300px;
-    width: 200px;
-    background-color: #252638;
-  }
-  .pdfcard1 > .card > .card-body > a {
-    text-decoration: none;
-    color: white;
-    font-size: 12px;
-  }
-  .IIIP > .heading2 {
-    text-transform: uppercase;
-    font-size: 20px;
-    text-align: center;
-    color: #ffffff;
-    background-color: #252638;
-    padding: 15px;
-  }
-}
-
-@media (max-width: 439px){
-  .pdfcard1 > .card {
-    height: 225px;
-    width: 150px;
-    background-color: #252638;
-  }
-  .pdfcard1 > .card > .card-body > a {
-    text-decoration: none;
-    color: white;
-    font-size: 8px;
-  }
-  .IIIP > .heading2 {
-    text-transform: uppercase;
-    font-size: 15px;
-    text-align: center;
-    color: #ffffff;
-    background-color: #252638;
-    padding: 12px;
-  }
-}

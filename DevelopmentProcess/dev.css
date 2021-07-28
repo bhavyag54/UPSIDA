@@ -37,6 +37,10 @@
   opacity: 0.3;
 }
 
+
+
+
+
 /* navbar */
 #navbar {
   top: 0;
@@ -117,82 +121,18 @@
   color: #e31e2f;
 }
 
-#impLinks {
-  position: fixed;
-  width: 300px;
-  top: 105px;
-  background-color: #fdfdfd;
-  text-align: center;
-  z-index: 1;
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
+
+.containerdev{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
 }
 
-#impLinks div {
-  display: block;
-  position: relative;
-  text-transform: uppercase;
-}
-
-#impLinks div #header {
-  font-weight: 500;
-  font-size: 20px;
-  padding: 18px;
-}
-
-#impLinks div li {
-  list-style: none;
-  padding: 15px;
-  border-bottom: rgba(0, 0, 0, 0.2) 1px solid;
-  cursor: pointer;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-}
-
-#impLinks div li:hover {
-  color: #e31e2f;
-  font-size: 14px;
-}
-
-#impLinks #impbtn {
-  position: fixed;
-  top: 0;
-  left: 246px;
-  border: none;
-  padding: 20px;
-  padding-left: 18px;
-  padding-right: 22px;
-  text-align: center;
-  vertical-align: middle;
-  border-bottom-left-radius: 50%;
-  border-top-left-radius: 50%;
-  background-color: #e31e2f;
-  color: white;
-  font-size: 14px;
-  font-weight: 700;
-  cursor: pointer;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-}
-
-#impLinks #impbtn:hover {
-  background-color: #b91826;
-}
-
-/* ContiainerPolicy */
-
-.containerPol {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-.heading1 {
-  display: flex;
+.containerdev > .heading{
+    display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -204,50 +144,42 @@
   text-decoration: double underline;
   text-decoration-color: #ea215a;
   text-decoration-thickness: 5px;
+  margin-bottom: 20px;
   text-underline-offset: 10px;
 }
 
-.IIIP {
-  margin-top: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.containerdev > .summ{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
-.IIIP > .heading2 {
-  text-transform: uppercase;
+
+.containerdev > #tbl{
+    padding: 20px;
+    font-size: 15px;
+    background-color: rgb(207, 223, 241);
+
+    
+}
+
+#tbl , th, td {
+    border: 1px solid rgb(173, 173, 173);
+}
+
+.containerdev > .heading2{
+    margin-top: 10px;
+    text-transform: uppercase;
+    width: 100%;
   font-size: 30px;
   text-align: center;
   color: #ffffff;
   background-color: #252638;
   padding: 20px;
 }
-.pdfcard1 {
-  margin-top: 20px;
-  padding-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  row-gap: 40px;
-  padding: 20px;
-}
-.pdfcard1 > .card {
-  height: 400px;
-  width: 300px;
-  background-color: #252638;
-}
 
-.pdfcard1 > .card > img {
-  height: 300px;
-}
-
-.pdfcard1 > .card > .card-body > a {
-  text-decoration: none;
-  color: white;
-  font-size: 15px;
-}
-
-/* Container policy ends here */
 
 /* footer */
 .col_white_amrc { color:#FFF;}
@@ -301,44 +233,110 @@ footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:2px;}
 .social_footer_ul li i {  width:20px; height:20px; text-align:center;}
 
 
-@media (max-width: 639px) and (min-width:439px){
-  .pdfcard1 > .card {
-    height: 300px;
-    width: 200px;
-    background-color: #252638;
-  }
-  .pdfcard1 > .card > .card-body > a {
-    text-decoration: none;
-    color: white;
-    font-size: 12px;
-  }
-  .IIIP > .heading2 {
-    text-transform: uppercase;
-    font-size: 20px;
-    text-align: center;
-    color: #ffffff;
-    background-color: #252638;
-    padding: 15px;
-  }
+@media (min-width: 320px) and (max-width: 1024px){
+
+    .navbar-brand > img{
+        height: 60px;
+        width: 40px;
+    }
+
+    .containerdev > .heading{
+        margin-top: 20px;
+        display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      left: 0;
+      text-transform: uppercase;
+      font-size: 22px;
+      color: #252638;
+      text-decoration: double underline;
+      text-decoration-color: #ea215a;
+      text-decoration-thickness: 5px;
+      margin-bottom: 20px;
+      text-underline-offset: 10px;
+    }
+    
+    .containerdev > .summ{
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .containerdev > #tbl{
+        padding: 16px;
+        font-size: 14px;
+        background-color: rgb(207, 223, 241);
+    
+        
+    }
+
+    .containerdev > .heading2{
+        margin-top: 8px;
+        text-transform: uppercase;
+        width: 100%;
+      font-size: 16px;
+      text-align: center;
+      color: #ffffff;
+      background-color: #252638;
+      padding: 16px;
+    }
 }
 
-@media (max-width: 439px){
-  .pdfcard1 > .card {
-    height: 225px;
-    width: 150px;
-    background-color: #252638;
-  }
-  .pdfcard1 > .card > .card-body > a {
-    text-decoration: none;
-    color: white;
-    font-size: 8px;
-  }
-  .IIIP > .heading2 {
-    text-transform: uppercase;
-    font-size: 15px;
-    text-align: center;
-    color: #ffffff;
-    background-color: #252638;
-    padding: 12px;
-  }
+@media (max-width: 320px){
+
+    .navbar-brand > img{
+        height: 50px;
+        width: 15px;
+    }
+
+    .containerdev > .heading{
+        margin-top: 20px;
+        display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      left: 0;
+      text-transform: uppercase;
+      font-size: 18px;
+      color: #252638;
+      text-decoration: double underline;
+      text-decoration-color: #ea215a;
+      text-decoration-thickness: 5px;
+      margin-bottom: 20px;
+      text-underline-offset: 10px;
+    }
+    
+    .containerdev > .summ{
+        font-size: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .containerdev > #tbl{
+        padding: 16px;
+        font-size: 11px;
+        background-color: rgb(207, 223, 241);
+    
+        
+    }
+
+    .containerdev > .heading2{
+        margin-top: 8px;
+        text-transform: uppercase;
+        width: 100%;
+      font-size: 13px;
+      text-align: center;
+      color: #ffffff;
+      background-color: #252638;
+      padding: 16px;
+    }
 }
