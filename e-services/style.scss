@@ -145,6 +145,16 @@
             gap: 10px;
             width: 100%;
             margin-top: 20px;
+
+            input{
+                border-radius: 10px;
+                border: 1px solid rgba(0,0,0,0.3);
+                padding: 4px 10px;
+
+                &:focus{
+                    outline: none;
+                }
+            }
         }
 
         #captcha{
@@ -176,5 +186,120 @@
                 letter-spacing: 2px;
             }
         }
+    }
+}
+
+#mid-divider{
+    margin: 5px auto;
+    width: 65%;
+    height: 1px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+#btn-container{
+    
+    .grp-1{
+
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 30px 50px;
+        justify-content: center;
+        align-items: center;
+
+        .btn{
+            text-decoration: none;
+            color: white;
+            border-radius: 50px;
+            padding:10px;
+            width: 65%;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #e31e2f;
+                border-radius: 50px;
+                z-index: -2;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0%;
+                height: 100%;
+                transition: all 0.3s;
+                background-color: #252638;
+                z-index: -1;
+                border-radius: 50px;
+            }
+        
+            &:hover{
+                color: white;
+                &:before{
+                    width: 100%;
+                }
+            }
+
+            animation:bouncy 5s infinite linear;
+            position: relative;
+        }
+
+        .btn-2{
+            animation-delay: 0.07s;
+        }
+        .btn-3{
+            animation-delay: 0.14s;
+        }
+        .btn-4{
+            animation-delay: 0.21s;
+        }
+        .btn-5{
+            animation-delay: 0.28s;
+        }
+
+        .btn-6{
+            animation-delay: 0.35s;
+        }
+    }
+
+}
+
+@keyframes bouncy {
+    0%{
+        top:0em;
+    }
+
+    40%{
+        top: 0em;
+    }
+
+    43%{
+        top: -0.9em;
+    }
+
+    46%{
+        top: 0em;
+    }
+
+    48%{
+        top: -0.4em;
+    }
+
+    50%{
+        top:0em;
+    }
+
+    100%{
+        top: 0em;
     }
 }

@@ -1,0 +1,109 @@
+.tcontainer {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.ticker-wrap {
+  width: 100%;
+  background-color: #fff;
+}
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+}
+
+.ticker-move {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  white-space: nowrap;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+          animation-name: ticker;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+.ticker-move:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.ticker-item {
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  color: #e31e2f;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  min-width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.ticker-item :first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.ticker-item:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10rem;
+  z-index: -2;
+}
+
+.ticker-item:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  background-color: #252638;
+  z-index: -1;
+}
+
+.ticker-item:hover {
+  color: white;
+}
+
+.ticker-item:hover:before {
+  width: 100%;
+}
+/*# sourceMappingURL=news.css.map */

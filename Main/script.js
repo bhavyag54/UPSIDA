@@ -74,57 +74,27 @@ setInterval(() => {
 
 // imp ends
 
-// news modal
-
-const newsModalBtn = document.getElementById('news-modal-btn')
-const newsclose = document.getElementById('news-modal-close');
-const newsmodal = document.getElementById('news-modal');
-newsModalBtn.addEventListener('click', () => {
-    newsmodal.style.opacity = 1;
-    newsmodal.style.visibility = 'visible';
-    newsmodal.style.zIndex = 10;
-})
-
-newsclose.addEventListener('click', () => {
-    newsmodal.style.opacity = 0;
-    newsmodal.style.visibility = 'hidden';
-    newsmodal.style.zIndex = -10;
-})
-
-// news modal ends
-
-
 // important pdfs modal
 
 const pdfModalBtn = document.getElementById('pdf-modal-btn')
 const pdfclose = document.getElementById('pdf-modal-close');
 const pdfmodal = document.getElementById('pdf-modal');
 pdfModalBtn.addEventListener('click', () => {
-    pdfmodal.style.opacity = 1;
-    pdfmodal.style.visibility = 'visible';
-    pdfmodal.style.zIndex = 10;
+    pdfmodal.style.display = "block";
+    pdfmodal.style.animation = "slide 0.2s ease-out";
 })
 
 pdfclose.addEventListener('click', () => {
-    pdfmodal.style.opacity = 0;
-    pdfmodal.style.visibility = 'hidden';
-    pdfmodal.style.zIndex = -10;
+    pdfmodal.style.display = "none";
+    pdfmodal.style.animation = "";
 })
 
 
 window.onclick = function(event) {
     if(event.target === pdfmodal)
     {
-        pdfmodal.style.opacity = 0;
-        pdfmodal.style.visibility = 'hidden';
-        pdfmodal.style.zIndex = -10;
-    }
-
-    if(event.target === newsmodal)
-    {
-        newsmodal.style.opacity = 0;
-        newsmodal.style.visibility = 'hidden';
-        newsmodal.style.zIndex = -10;
+        pdfmodal.style.display = "none";
+        pdfmodal.style.animation = "";
     }
  }
 
