@@ -120,3 +120,14 @@ color: #55ACEE;
 #yogi-section{
   width: 100%;
 }
+
+@media screen and (max-width: 500px) {
+
+  .text{
+
+    padding: 10px;
+    width: 90%;
+
+  }
+
+}

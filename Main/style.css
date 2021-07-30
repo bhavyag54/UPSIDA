@@ -188,20 +188,24 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 90vw;
   min-height: 400px;
   margin: 20px 5vw;
+  row-gap: 20px;
 }
 
 #news-pdfs #new-links {
   display: block;
   position: relative;
   height: 400px;
-  width: 100%;
+  width: 40%;
+  min-width: 320px;
+  overflow-y: hidden;
   background-color: #ffffff;
 }
 
@@ -248,7 +252,7 @@
   position: relative;
   height: 400px;
   width: 40%;
-  min-width: 500px;
+  min-width: 320px;
   background-color: #ffffff;
   margin-bottom: 10px;
 }
