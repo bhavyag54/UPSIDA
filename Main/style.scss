@@ -202,8 +202,7 @@
         display: block;
         position: relative;
         height: 400px;
-        width: 40%;
-        min-width: 500px;
+        width: 100%;
         background-color: #ffffff;
 
         #heading{
@@ -238,13 +237,6 @@
             }
         }
 
-    }
-
-
-    #divider{
-        height: 100%;
-        width: 1px;
-        background-color: rgba(0,0,0,0.5);
     }
 
 
@@ -287,6 +279,44 @@
                 background-color: #e31e2f;
             }
         }
+
+        #pdf-container{
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            height: 100%;
+            margin-top: 20px;
+
+            ul{
+                margin-left: 0px;
+                list-style: none;
+                text-decoration: none;
+
+                li{
+                    width: 94%;
+                    cursor: pointer;
+                    a{
+                        text-decoration: none;
+                        color:rgba(0,0,0,1);
+                        font-weight: 500;
+                        transition: all 0.15s ease-in;
+                    }
+
+                    padding: 10px;
+                    border-bottom: 1px solid rgba(0,0,0,0.3);
+
+                    &:hover{
+                        a{
+                            color: #e31e2f;
+                        }
+                    }
+                }
+
+            }
+
+            
+        }
+
 
         #pdf-modal-btn{
             position: absolute;
@@ -342,17 +372,36 @@
                 display: flex;
                 background-color: transparent;
                 flex-direction: column;
-                width: 750px;
+                width: 80%;
                 margin: 60px auto;
                 gap: 20px;
                 align-items: center;
                 vertical-align: middle;
 
                 #modal-pdf{
-                    height: 60px;
-                    width: 750px;
+                    width: 90%;
                     background-color: #ffffff;
                     border-radius: 5px;
+                    text-align: center;
+                    padding: 10px;
+                    align-items: center;
+                    align-content: center;
+                    line-height: 30px;
+                    transition: all 0.25s ease-in;
+                    a{
+                        text-decoration: none;
+                        color: rgba(0,0,0,1);
+                        font-weight: 500;
+                        font-size: 16px;
+                        transition: all 0.15s ease-in;
+                    }
+
+                    &:hover{
+                        a{
+                            color:#e31e2f;
+                            font-size: 15px;
+                        }
+                    }
                 }
             }
         }

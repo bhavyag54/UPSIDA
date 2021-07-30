@@ -21,12 +21,13 @@
     }
 
     .dropdown-item{
-
+        
+        
         a{
             text-decoration: none;
             color: black;
             font-weight: 700;
-            word-break: break-all;
+            
         }
 
         &:hover{
@@ -38,7 +39,6 @@
     }
 
     background-color: white;
-    height: 80px;
     padding: 0px;
     
     .navbar-brand{
@@ -53,7 +53,7 @@
             padding: 0px 10px;
             font-size: 14px;
             .dropdown-item{
-                word-wrap: break-word;
+                min-height: 0;
                 border-bottom: 1px solid black;
             }
             

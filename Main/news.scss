@@ -16,7 +16,7 @@ background-color: #fff;
 }
 .ticker-move {
 display: flex;
-white-space: nowrap;
+white-space: wrap;
 animation-iteration-count: infinite;
 animation-timing-function: linear;
 animation-name: ticker;

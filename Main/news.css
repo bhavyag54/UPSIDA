@@ -35,7 +35,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  white-space: nowrap;
+  white-space: wrap;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;

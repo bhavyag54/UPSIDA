@@ -15,7 +15,6 @@
   text-transform: uppercase;
   font-size: 14px;
   background-color: white;
-  height: 80px;
   padding: 0px;
 }
 
@@ -28,7 +27,6 @@
   text-decoration: none;
   color: black;
   font-weight: 700;
-  word-break: break-all;
 }
 
 #navbar .dropdown-item:hover {
@@ -50,7 +48,7 @@
 }
 
 #navbar .dropdown .dropdown-menu .dropdown-item {
-  word-wrap: break-word;
+  min-height: 0;
   border-bottom: 1px solid black;
 }
 

@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
-@import url("./yogi.css");
-@import url("./carousel.css");
-@import url("./proj.css");
-@import url("./footer.css");
-@import url("./news.css");
-@import url("./cardbaazi.css");
-
+@import url("/Main/yogi.css");
+@import url("/Main/carousel.css");
+@import url("/Main/proj.css");
+@import url("/Main/footer.css");
+@import url("/Main/news.css");
+@import url("/Main/cardbaazi.css");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -202,8 +201,7 @@
   display: block;
   position: relative;
   height: 400px;
-  width: 40%;
-  min-width: 500px;
+  width: 100%;
   background-color: #ffffff;
 }
 
@@ -243,12 +241,6 @@
   height: 4px;
   width: 6px;
   background-color: #e31e2f;
-}
-
-#news-pdfs #divider {
-  height: 100%;
-  width: 1px;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #news-pdfs #pdf-links {
@@ -296,6 +288,44 @@
   height: 4px;
   width: 6px;
   background-color: #e31e2f;
+}
+
+#news-pdfs #pdf-links #pdf-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+  margin-top: 20px;
+}
+
+#news-pdfs #pdf-links #pdf-container ul {
+  margin-left: 0px;
+  list-style: none;
+  text-decoration: none;
+}
+
+#news-pdfs #pdf-links #pdf-container ul li {
+  width: 94%;
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#news-pdfs #pdf-links #pdf-container ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+
+#news-pdfs #pdf-links #pdf-container ul li:hover a {
+  color: #e31e2f;
 }
 
 #news-pdfs #pdf-links #pdf-modal-btn {
@@ -361,7 +391,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 750px;
+  width: 80%;
   margin: 60px auto;
   gap: 20px;
   -webkit-box-align: center;
@@ -371,10 +401,33 @@
 }
 
 #news-pdfs #pdf-links #pdf-modal #pdf-modal-content #modal-pdf {
-  height: 60px;
-  width: 750px;
+  width: 90%;
   background-color: #ffffff;
   border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  line-height: 30px;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+#news-pdfs #pdf-links #pdf-modal #pdf-modal-content #modal-pdf a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+
+#news-pdfs #pdf-links #pdf-modal #pdf-modal-content #modal-pdf:hover a {
+  color: #e31e2f;
+  font-size: 15px;
 }
 
 @-webkit-keyframes slide {
