@@ -26,7 +26,6 @@
   right: 0;
   list-style-type: none;
   vertical-align: middle;
-  margin-left: 70px;
   background-color: white;
 }
 
@@ -89,7 +88,6 @@
 }
 
 .active {
-  margin-left: 0 !important; 
   display: block;
 }
 
@@ -161,6 +159,7 @@
     background:transparent;
     display: flex;
     margin-right: 30px;
+    margin-left: 70px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
