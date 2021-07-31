@@ -37,70 +37,6 @@
   opacity: 0.3;
 }
 
-#impLinks {
-  position: fixed;
-  width: 300px;
-  top: 105px;
-  background-color: #fdfdfd;
-  text-align: center;
-  z-index: 1;
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-}
-
-#impLinks div {
-  display: block;
-  position: relative;
-  text-transform: uppercase;
-}
-
-#impLinks div #header {
-  font-weight: 500;
-  font-size: 20px;
-  padding: 18px;
-}
-
-#impLinks div li {
-  list-style: none;
-  padding: 15px;
-  border-bottom: rgba(0, 0, 0, 0.2) 1px solid;
-  cursor: pointer;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-}
-
-#impLinks div li:hover {
-  color: #e31e2f;
-  font-size: 14px;
-}
-
-#impLinks #impbtn {
-  position: fixed;
-  top: 0;
-  left: 246px;
-  border: none;
-  padding: 20px;
-  padding-left: 18px;
-  padding-right: 22px;
-  text-align: center;
-  vertical-align: middle;
-  border-bottom-left-radius: 50%;
-  border-top-left-radius: 50%;
-  background-color: #e31e2f;
-  color: white;
-  font-size: 14px;
-  font-weight: 700;
-  cursor: pointer;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-}
-
-#impLinks #impbtn:hover {
-  background-color: #b91826;
-}
-
 /* ContiainerPolicy */
 
 .containerPol {
@@ -156,6 +92,8 @@
   width: 300px;
   background-color: #252638;
 }
+
+
 
 .pdfcard1 > .card > img {
   height: 300px;
@@ -242,17 +180,23 @@ footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:2px;}
   }
 }
 
-@media (max-width: 439px){
+@media screen and (max-width: 439px){
   .pdfcard1 > .card {
-    height: 225px;
-    width: 150px;
+    height: 235px;
+    width: 155px;
     background-color: #252638;
   }
   .pdfcard1 > .card > .card-body > a {
     text-decoration: none;
     color: white;
     font-size: 8px;
+
   }
+  .pdfcard1 > .card > .card-body {
+    padding: 0  2px !important;
+  }
+
+
   .IIIP > .heading2 {
     text-transform: uppercase;
     font-size: 15px;
