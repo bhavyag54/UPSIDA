@@ -8,11 +8,41 @@
 }
 
 
+#topper {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  z-index: 1;
+  background-color: #252638;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#topper #date, #topper #time {
+  font-size: 14px;
+  padding: 0px 10px;
+  color: white;
+}
+
+#topper #divider {
+  height: 30px;
+  width: 1px;
+  background-color: white;
+  opacity: 0.3;
+}
+
+
 #container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 95vw;
+  justify-content: space-around;
   position: relative;
   margin: 10px 2.5vw;
   height: 60vh;
@@ -71,9 +101,13 @@
 }
 
 #container #con2 #inputs input {
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   padding: 4px 10px;
+}
+
+#container #con2 #inputs input:focus{
+  border: 1px solid rgba(0, 0, 0, 1);
 }
 
 #container #con2 #inputs input:focus {
@@ -92,6 +126,7 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 12px;
+  border-radius: 3px;
 }
 
 #container #con2 #login {
@@ -105,7 +140,7 @@
   padding: 8px 15px;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 #container #con2 #login:hover {
@@ -149,47 +184,21 @@
   padding: 10px;
   width: 65%;
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  background-color: #e31e2f;
   z-index: 1;
   -webkit-animation: bouncy 5s infinite linear;
           animation: bouncy 5s infinite linear;
   position: relative;
 }
 
-#btn-container .grp-1 .btn:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #e31e2f;
-  border-radius: 50px;
-  z-index: -2;
-}
+#btn-container .grp-1 .btn:hover{
+  transform: translateY(-5px) scale(105%);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 
-#btn-container .grp-1 .btn:before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  background-color: #252638;
-  z-index: -1;
-  border-radius: 50px;
-}
-
-#btn-container .grp-1 .btn:hover {
-  color: white;
-}
-
-#btn-container .grp-1 .btn:hover:before {
-  width: 100%;
+  animation-play-state: paused;
 }
 
 #btn-container .grp-1 .btn-2 {
@@ -225,13 +234,13 @@
     top: 0em;
   }
   43% {
-    top: -0.9em;
+    top: -0.3em;
   }
   46% {
     top: 0em;
   }
   48% {
-    top: -0.4em;
+    top: -0.1em;
   }
   50% {
     top: 0em;
@@ -249,13 +258,13 @@
     top: 0em;
   }
   43% {
-    top: -0.9em;
+    top: -0.3em;
   }
   46% {
     top: 0em;
   }
   48% {
-    top: -0.4em;
+    top: -0.1em;
   }
   50% {
     top: 0em;
@@ -264,4 +273,31 @@
     top: 0em;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+
+@media screen and (max-width: 900px) {
+  #container #banner{
+    display: none;
+  }
+
+  #container #divider{
+    display: none;
+  }
+
+  #container #con2 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  #container #con2 #radios {
+    width:90%;
+    justify-content: flex-start;
+   
+  }
+
+  .grp-1 .btn{
+    width: 90% !important;
+  }
+}

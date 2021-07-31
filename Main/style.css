@@ -82,7 +82,7 @@
 
 #impLinks #impbtn {
   position: fixed;
-  top: 0;
+  top: 40px;
   left: 246px;
   border: none;
   padding: 20px;
@@ -286,10 +286,10 @@
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(8px);
   top: 0;
-  left: 0;
+  left: -20px;
   width: calc(100% + 50px);
   height: 100%;
-  overflow: auto;
+  overflow-y: scroll;
   z-index: 10;
   display: none;
   -webkit-transition: all 0.25s linear;
@@ -300,14 +300,24 @@
   z-index: 1;
   position: absolute;
   top: 0;
-  right: 50px;
+  right: 30px;
   margin: 10px;
   margin-left: 20px;
-  color: white;
   font-weight: 600;
   font-size: 35px;
   cursor: pointer;
+  
 }
+
+#news-pdfs #pdf-links #pdf-modal #pdf-modal-close i{
+  color: white;
+  background-color: transparent;
+}
+
+#news-pdfs #pdf-links #pdf-modal #pdf-modal-close i:hover{
+  color: #e31e2f;
+}
+
 
 #news-pdfs #pdf-links #pdf-modal #pdf-modal-content {
   display: -webkit-box;
@@ -318,9 +328,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  right: 50px;
   width: 80%;
   margin: 60px auto;
-  gap: 20px;
+  row-gap: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -375,3 +386,13 @@
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+
+@media screen and (max-width: 750px) {
+  #news-pdfs #pdf-links{
+    width: 100%;
+  }
+  #news-pdfs #new-links{
+    width: 100%;
+  }
+}
