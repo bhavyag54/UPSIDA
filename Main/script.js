@@ -1,25 +1,3 @@
-const dropdowns = document.getElementsByClassName('dropdown');
-const y = document.body.offsetWidth;
-
-dropdowns[0].childNodes[3].style.left = `-0px`;
-dropdowns[1].childNodes[3].style.left = `-50px`;
-dropdowns[2].childNodes[3].style.left = `-130px`;
-
-document.addEventListener('scroll', () => {
-    if(window.scrollY > 40)
-    {
-        document.getElementById('navbar').style.position = "fixed";
-    }
-
-    if(window.scrollY <= 40)
-    {
-        document.getElementById('navbar').style.position = "";
-    }
-    
-})
-
-
-
 
 //imp
 

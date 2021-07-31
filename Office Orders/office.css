@@ -38,148 +38,6 @@
 }
 
 /* navbar */
-#navbar {
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  text-transform: uppercase;
-  font-size: 14px;
-  background-color: white;
-  height: 80px;
-  padding: 0px;
-}
-
-#navbar .container-fluid {
-  vertical-align: middle;
-  background-color: white;
-}
-
-#navbar .dropdown-item a {
-  text-decoration: none;
-  color: black;
-  font-weight: 700;
-}
-
-#navbar .dropdown-item:hover {
-  background-color: white;
-}
-
-#navbar .dropdown-item:hover a {
-  color: #e31e2f;
-}
-
-#navbar .navbar-brand img {
-  width: 150px;
-}
-
-#navbar .dropdown .dropdown-menu {
-  overflow-x: hidden;
-  padding: 0px 10px;
-  font-size: 14px;
-}
-
-#navbar .dropdown .dropdown-menu .dropdown-item {
-  word-wrap: break-word;
-  border-bottom: 1px solid black;
-}
-
-#navbar .dropdown .dropdown-menu :last-child {
-  border-bottom: none;
-}
-
-#navbar #navbar-btn {
-  top: 0;
-  right: 0;
-  margin: 20px;
-  background-color: white;
-  -webkit-transition: all 0.25s ease-in;
-  transition: all 0.25s ease-in;
-}
-
-#navbar #navbar-btn:hover {
-  background-color: #e6e6e6;
-}
-
-#navbar .navbar-nav .nav-item {
-  text-align: center;
-}
-
-#navbar .navbar-nav .nav-item .nav-link {
-  color: #252638;
-  font-weight: 700;
-  text-decoration: none;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-
-#navbar .navbar-nav .nav-item:hover .nav-link {
-  color: #e31e2f;
-}
-
-#impLinks {
-  position: fixed;
-  width: 300px;
-  top: 105px;
-  background-color: #fdfdfd;
-  text-align: center;
-  z-index: 1;
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-}
-
-#impLinks div {
-  display: block;
-  position: relative;
-  text-transform: uppercase;
-}
-
-#impLinks div #header {
-  font-weight: 500;
-  font-size: 20px;
-  padding: 18px;
-}
-
-#impLinks div li {
-  list-style: none;
-  padding: 15px;
-  border-bottom: rgba(0, 0, 0, 0.2) 1px solid;
-  cursor: pointer;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-}
-
-#impLinks div li:hover {
-  color: #e31e2f;
-  font-size: 14px;
-}
-
-#impLinks #impbtn {
-  position: fixed;
-  top: 0;
-  left: 246px;
-  border: none;
-  padding: 20px;
-  padding-left: 18px;
-  padding-right: 22px;
-  text-align: center;
-  vertical-align: middle;
-  border-bottom-left-radius: 50%;
-  border-top-left-radius: 50%;
-  background-color: #e31e2f;
-  color: white;
-  font-size: 14px;
-  font-weight: 700;
-  cursor: pointer;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-}
-
-#impLinks #impbtn:hover {
-  background-color: #b91826;
-}
 
 /* office */
 .offcontainer{
@@ -203,6 +61,11 @@
   text-decoration-color: #ea215a;
   text-decoration-thickness: 5px;
   text-underline-offset: 10px;
+}
+
+.offcontainer > .tableoff {
+  width: 100%;
+  overflow-x: auto;
 }
 
 .offcontainer > .tableoff > table{

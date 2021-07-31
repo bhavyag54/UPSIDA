@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <link rel="stylesheet" href="./office.css" />
+    <link rel="stylesheet" href="../navbar/H-navbar.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -41,68 +42,70 @@
     <!-- Top Date Time end -->
 
     <!-- navbar     -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="../assets/photos/upsida-logo-name.png" alt="logo"></a>
-          <button id="navbar-btn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+    <nav class="navbar-nav" id="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <div id="ham">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </span>
+      
+        <a href="../index.html" class="logo"><img src="../assets/photos/upsida-logo-name.png" alt="..."></a>
+      
+        <ul class="main-nav" id="js-menu">
+            <li  class="nav-items">
+                <a href="../index.html" class="nav-links">Home</a>
+            </li>
+            <li class="nav-items">
+                <a class="nav-links" href="../AboutUs/about.html">about upsida</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../AboutUs/about.html">about upsida</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../Policies/policy.html">policies</a>
+              <li class="nav-items">
+                <a class="nav-links" href="../Policies/policy.html">policies</a>
               </li>
       
-              <li class="nav-item">
-                <a class="nav-link" href="#">industrial info</a>
+              <li class="nav-items">
+                <a class="nav-links" href="#">industrial info</a>
               </li>
       
-              <li class="nav-item">
-                <a class="nav-link" href="#">gis</a>
+              <li class="nav-items">
+                <a class="nav-links" href="#">gis</a>
               </li>
       
-              <li class="nav-item">
-                <a class="nav-link" href="../e-services/eservices.html">e-services</a>
+              <li class="nav-items">
+                <a class="nav-links" href="../e-services/eservices.html">e-services</a>
               </li>
       
-              <li class="nav-item">
-                <a class="nav-link" href="#">office orders</a>
+              <li class="nav-items">
+                <a class="nav-links" href="#">office orders</a>
               </li>
       
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">resource centre</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li class="dropdown-item"><a href="../Office Orders/office.html">Office Orders</a></li>
-                    <li class="dropdown-item"><a href="../DevelopmentProcess/dev.html">Development Process</a></li>
+              <li class="nav-items dropdowns">
+                <a class="nav-links">resource centre</a>
+                <ul class="dropdown-menus">
+                    <li class="dropdown-items"><a href="../Office Orders/office.html">Office Orders</a></li>
+                    <li class="dropdown-items"><a href="../DevelopmentProcess/dev.html">Development Process</a></li>
                 </ul>
               </li>
       
-              <li class="nav-item dropdown">
-                <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">available plots</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li class="dropdown-item"><a href="https://eservices.onlineupsidc.com/Advertisement.aspx" target="_blank">Available Plot List in Nivesh Mitra </a></li>
-                    <li class="dropdown-item"><a href="https://upsida.mjunction.in/" target="_blank">Available Plot in E-auction </a></li>
-                    
+              <li class="nav-items dropdowns">
+                <a  class="nav-links">available plots</a>
+                <ul class="dropdown-menus">
+                    <li class="dropdown-items"><a href="https://eservices.onlineupsidc.com/Advertisement.aspx" target="_blank">Available Plot List in Nivesh Mitra </a></li>
+                    <li class="dropdown-items"><a href="https://upsida.mjunction.in/" target="_blank">Available Plot in E-auction </a></li>
                 </ul>
               </li>
       
-              <li class="nav-item dropdown">
-                <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">contact us</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li class="dropdown-item"><a href="../headoffice/headoffice.html">Head Office</a></li>
-                    <li class="dropdown-item"><a href="Regionaloffice.aspx">Regional/project Office</a></li>
-                    <li class="dropdown-item"><a href="Divisionsoffice.aspx">Divisonal Office</a></li>
+              <li class="nav-items dropdowns">
+                <a  class="nav-links" >contact us</a>
+                <ul class="dropdown-menus">
+                    <li class="dropdown-items"><a href="../headoffice/headoffice.html">Head Office</a></li>
+                    <li class="dropdown-items"><a href="Regionaloffice.aspx">Regional/project Office</a></li>
+                    <li class="dropdown-items"><a href="Divisionsoffice.aspx">Divisonal Office</a></li>
                 </ul>
               </li>
-            </ul>
-          </div>
-        </div>
+        </ul>
+      
       </nav>
     <!-- navbar ends -->
 
@@ -113,7 +116,7 @@
         </div>
 
         <div class="tableoff">
-            <table class="table-bordered table table  table-hover table-responsive">
+            <table class="table-bordered table table-hover table-responsive">
                 <thead>
                     <tr style="background-color: #252638; color: white; font-size: 15px; text-align: center;">
                         <th style="text-align: center">SI.No.</th>
@@ -248,7 +251,7 @@
                         <td><a style="text-decoration: none; color: #b91826; font-size: 15px;" href="https://www.onlineupsidc.com/OfcUser_pdf/651-658 officeorderplannedres.pdf" target="_blank">Click here </a></td>
 
                     </tr>
-                <tr >
+                    <tr >
                         <td>12.</td>
                         <td>663-669/UPSIDA/ATP BYLAWS/WAREHOUSING</td>
                         <td>2020</td>
@@ -301,7 +304,6 @@
                         <td>Policy Amendment</td>
                         <td>UPDATE NAME</td>
                         <td><a style="text-decoration: none; color: #b91826; font-size: 15px;" href="https://www.onlineupsidc.com/OfcUser_pdf/UPDATE_NAME(3).pdf" target="_blank">Click here </a></td>
-
                     </tr>
                     <tr >
                         <td>15.</td>
@@ -379,7 +381,7 @@
                         <td>Maintenance Charges</td>
                         <td><a style="text-decoration: none; color: #b91826; font-size: 15px;" href="https://www.onlineupsidc.com/OfcUser_pdf/MaintenanceCharges(10).pdf" target="_blank">Click here </a></td>
                     </tr>
-                    <tr class="active">
+                    <tr>
                         <td>11.</td>
                         <td>663-666/SIDC/IA/Policy vol-17</td>
                         <td>2017</td>
@@ -422,7 +424,7 @@
                         <td>Change of Land category </td>
                         <td><a style="text-decoration: none; color: #b91826; font-size: 15px;" href="https://www.onlineupsidc.com/OfcUser_pdf/Change of Land category(14).pdf" target="_blank">Click here </a></td>
                     </tr>
-                    <tr class="active">
+                    <tr>
                         <td>15.</td>
                         <td>3242-46/SIDC/IA/Policy vol-16</td>
                         <td>2016</td>
@@ -551,7 +553,7 @@
                         <td>Land allotment for Telecom towers</td>
                         <td><a style="text-decoration: none; color: #b91826; font-size: 15px;" href="https://www.onlineupsidc.com/OfcUser_pdf/Land allotment for Telecom towers_IA_Policy vol-16(26).pdf" target="_blank">Click here </a></td>
                     </tr>
-                    <tr class="active">
+                    <tr>
                         <td>27.</td>
                         <td>115-119/SIDC/IA/HO</td>
                         <td>2015</td>
@@ -825,5 +827,6 @@
     ></script>
 
     <script src="./office.js"></script>
+    <script src="../navbar/H-navbar.js"></script>
   </body>
 </html>

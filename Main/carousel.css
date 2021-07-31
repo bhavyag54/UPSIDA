@@ -1,18 +1,30 @@
 #carouselExampleFade{
     width: 90%;
+    height: 44vw;
     margin: 0px auto;
     margin-bottom: 50px;
     z-index: 0;
-    border-radius: 10px;
     overflow: hidden;
+    border-radius: 10px;
     box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
 
 
   }
-  .carousel-inner img {
-    height: 100%;
+  .carousel-inner{
+      overflow: hidden;
+      width: 100%;
   }
   
+  .carousel-inner img{
+    width: 90%;
+    object-fit:fill;
+  }
+
+  .carousel-item{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
   
   
   .carousel-control-next,
